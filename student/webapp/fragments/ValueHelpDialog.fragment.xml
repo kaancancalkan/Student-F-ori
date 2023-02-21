@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+ <SelectDialog
+  id="selectDialog"
+  title="Student"
+  items="{main>/Student}"
+  search=".onValueHelpSearch"
+  confirm=".onValueHelpClose"
+  cancel=".onValueHelpClose">
+  <StandardListItem
+   title="{main>StudentCode}"
+   description="{main>StudentName}" />
+ </SelectDialog>
+</core:FragmentDefinition>

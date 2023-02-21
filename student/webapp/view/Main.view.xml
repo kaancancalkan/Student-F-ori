@@ -1,0 +1,41 @@
+<mvc:View controllerName="screen.student.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox class="sapUiSmallMargin" >
+                <f:SimpleForm 
+                    id="SimpleFormDisplay354"
+                    editable="false"
+                    layout="ResponsiveGridLayout"
+                    title="Select Student"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false"
+                >
+                    <f:content>
+                     <VBox
+                    >
+                        <Input id="StudentInput" value="{main>/StudentCode}" placeholder="Enter Student Code" showSuggestion="true" showValueHelp="true" valueHelpRequest=".onValueHelpRequest" width="50%" />
+                        <MultiComboBox id="StudentCombobox" placeholder="Enter Student Class" selectionChange="handleSelectionChange" selectionFinish="handleSelectionFinish" width="50%" items="">
+                            <!-- <core:Item key="StudentId}" text="{Name}" /> -->
+                        </MultiComboBox>
+                        </VBox>
+                    </f:content>
+                    
+                 
+
+                  
+                </f:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
